@@ -127,12 +127,24 @@ a:hover{
 
 #about-page {
   height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1453&q=80);
   background-color: rgb(84, 245, 245);
   text-align: center;
+  color: aliceblue;
   
 }
 
+.profile-img{
+  border-radius: 50%;
+  /* padding-top: 30px; */
+  box-shadow: white 4px 4px 8px;
+}
 
+.img-tag{
+  padding-top: 50px;
+  margin:30px 0px 0px 0px;
+
+}
 
 /* --------------Contact us form css---------------------- */
 #contact-page {
