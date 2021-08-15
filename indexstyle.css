@@ -11,6 +11,7 @@ body {
   margin: 0;
   line-height: 1.6;
   letter-spacing: 1px;
+
 }
 
 /* html,
@@ -20,6 +21,14 @@ body {
   border: 0;
   background-color: violet;
 } */
+.container{
+  scroll-snap-type:y mandatory;
+  /* overflow-y: scroll; */
+  /* height: 100vh; */
+}
+
+
+
 /* ------------------------- NavBar---------------- */
 #navbar {
   position: fixed;
@@ -56,6 +65,9 @@ a:hover{
   
   justify-content: center;
   /* font-weight: bolder; */
+
+  overflow:auto;
+
 }
 
 .wel-page-heading{
@@ -69,7 +81,7 @@ a:hover{
   font-size: 1rem;
   position: absolute;
   bottom: 50px;
-right: 80px;
+  right: 80px;
   left: 80px;
   align-items: center;
   text-align: center;
@@ -79,39 +91,61 @@ right: 80px;
 
 
 /* -------------------------------------------------------- */
-#our-work-page {
+/* #our-work-page {
   height: 100vh;
   background-color: cadetblue;
   text-align: center;
   padding: 0%;
   margin: 0%;
-}
-
+  scroll-snap-align:start ;
+} */
+/* -----------------contribution page------------------------------- */
 #ur-contri {
   height: 100vh;
   /* background-image: url(https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80); */
-  background-color: chocolate;
+  background-color: rgb(245, 131, 49);
   text-align: center;
   padding: 0%;
+  /* overflow:auto; */
+  
 }
+
+.contri-img{
+  
+  box-shadow: black 4px 4px 8px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 10vh;
+  height: 10vh;
+  }
+  
+  
+
+
+/* --------------------about-us-page---------------------------------- */
 
 #about-page {
   height: 100vh;
-  background-color: cyan;
+  background-color: rgb(84, 245, 245);
   text-align: center;
+  
 }
+
+
 
 /* --------------Contact us form css---------------------- */
 #contact-page {
   height: 89vh;
   background-color: rgb(255, 255, 255);
   text-align: center;
+  
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 100px 20px;
+  max-width: 1100px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -198,4 +232,14 @@ footer {
   padding-bottom: 1px;
   bottom: 0px;
   font-family: "Gotu", sans-serif;
+}
+
+
+/* .example::-webkit-scrollbar {
+  display: none;
+} */
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent; 
 }
